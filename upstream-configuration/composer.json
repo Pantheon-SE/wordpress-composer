@@ -1,0 +1,18 @@
+{
+  "name": "pantheon-upstreams/wordpress-upstream-configuration",
+  "type": "project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "composer/installers": "^1.8",
+    "drupal-composer/preserve-paths": "^0.1",
+    "johnpbloch/wordpress-core-installer": "^2.0",
+    "johnpbloch/wordpress-core": "~5.0",
+    "cweagans/composer-patches": "^1.0"
+  }
+}

@@ -9,31 +9,47 @@
       "role": ""
     }
   ],
-  "repositories":[
+  "repositories": [
     {
-      "type":"composer",
-      "url":"https://wpackagist.org"
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "path",
+      "url": "upstream-configuration"
     }
   ],
   "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
-    "sort-packages": true
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "platform": {
+      "php": "7.4"
+    }
   },
   "require": {
-    "composer/installers": "^1.2",
-    "drupal-composer/preserve-paths": "^0.1",
-    "johnpbloch/wordpress-core-installer": "^2.0",
-    "johnpbloch/wordpress-core": "~5.0"
+    "pantheon-upstreams/wordpress-upstream-configuration": "*"
   },
   "extra": {
     "installer-paths": {
-      "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+      "web/wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/wp-content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     },
+    "composer-exit-on-patch-failure": true,
     "preserve-paths": [
-      "web/wp-config.php",
-      "web/wp-content/uploads"
+      "web/wp-content/mu-plugins/pantheon/",
+      "web/wp-content/mu-plugins/pantheon.php",
+      "web/wp-content/uploads",
+      "web/wp-config-local-sample.php",
+      "web/wp-config-pantheon.php",
+      "web/wp-config-sample.php",
+      "web/wp-config.php"
     ],
     "wordpress-install-dir": "web"
   }
