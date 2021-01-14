@@ -43,7 +43,7 @@
     },
     "composer-exit-on-patch-failure": true,
     "preserve-paths": [
-      "web/wp-content/mu-plugins/pantheon/",
+      "web/wp-content/mu-plugins/pantheon",
       "web/wp-content/mu-plugins/pantheon.php",
       "web/wp-content/uploads",
       "web/wp-config-local-sample.php",
