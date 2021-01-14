@@ -8,13 +8,12 @@ This project consist of:
 * Repository https://wpackagist.org/ to install WordPress plugins and themes
 * `composer/installers` to set custom paths for plugins and themes
 * `drupal-composer/preserve-paths` to exclude paths for plugins and themes under version control 
-* `wodby.yml` that runs `composer install`. You can remove it if you're not using [Wodby](https://wodby.com)
 
 Current WordPress core: `~5.0`
 
 ### Paths
 
-By default, wordpress core will be installed in `./web` directory. Plugins and themes will be installed in `./web/wp-content/plugins` and `./web/wp-content/themes`. Point your Apache vhost or similar to this project's `./web` directory.
+By default, WordPress core will be installed in `./web` directory. Plugins and themes will be installed in `./web/wp-content/plugins` and `./web/wp-content/themes`. Point your Apache vhost or similar to this project's `./web` directory.
 
 ### Usage
 
@@ -25,7 +24,7 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 Start a new project:
 
 ```
-composer create-project wodby/wordpress-composer some-dir --stability dev --no-interaction
+composer create-project pantheon-se/wordpress-composer some-dir --stability dev --no-interaction
 ```
 
 The `composer create-project` command passes ownership of all files to the project that is created. You should create a new git repository, and commit all files not excluded by the .gitignore file.
@@ -59,9 +58,3 @@ composer require wpackagist-plugin/wp-cfm
     ```
 3. Add your plugin/theme directory under version control
 4. Run `composer install`. Composer will install WordPress core and keep your custom theme
-
-### Deployment via Wodby
-
-1. Create a new project. 
-2. Connect the repository to Wodby.
-3. Deploy new app, choose WordPress stack, on the 2nd step of the form choose connected repository and enter `web` as Codebase dir.
