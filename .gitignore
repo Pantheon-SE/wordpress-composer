@@ -80,7 +80,7 @@ web/sites/*/services*.yml
 # file.
 # ------------------------------------------------------------------
 /web/wp-admin/
-/web/wp-includes
+/web/wp-includes/
 /web/wp-content/plugins/composer/
 /web/wp-content/themes/composer/
 /web/private/scripts/quicksilver
