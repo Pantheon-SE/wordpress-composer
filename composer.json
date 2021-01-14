@@ -43,13 +43,13 @@
     },
     "composer-exit-on-patch-failure": true,
     "preserve-paths": [
+      "web/wp-config.php",
+      "web/wp-config-pantheon.php",
+      "web/wp-config-local-sample.php",
+      "web/wp-config-sample.php",
       "web/wp-content/mu-plugins/pantheon",
       "web/wp-content/mu-plugins/pantheon.php",
-      "web/wp-content/uploads",
-      "web/wp-config-local-sample.php",
-      "web/wp-config-pantheon.php",
-      "web/wp-config-sample.php",
-      "web/wp-config.php"
+      "web/wp-content/uploads"
     ],
     "wordpress-install-dir": "web"
   }

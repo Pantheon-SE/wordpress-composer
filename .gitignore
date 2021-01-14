@@ -64,6 +64,7 @@ upstream-configuration/wp-content/
 upstream-configuration/wp-admin/
 upstream-configuration/wp-upload/
 upstream-configuration/web/
+upstream-configuration/wordpress/
 
 # Generally you should only ignore the root vendor directory. It's important
 # that core/assets/vendor and any other vendor directories within contrib or
